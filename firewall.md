@@ -1,17 +1,17 @@
-#Configuring a Basic Firewall
-Install firewall: `sudo yum install firewalld`
-Start firewall:  `sudo systemctl start firewalld `
+# Configuring a Basic Firewall
+- Install firewall: `sudo yum install firewalld`
+- Start firewall:  `sudo systemctl start firewalld `
 
-##Add service to firewall by name
+## Add service to firewall by name
 `sudo firewall-cmd --permanent --add-service=ssh`
 
-##Add service to firewall by port and protocol
+## Add service to firewall by port and protocol
 `sudo firewall-cmd --permanent --add-port=4444/tcp`
 
-##Remove service by name
+## Remove service by name
  `sudo firewall-cmd --permanent --remove-service=ssh`
  
- ##Some services firewall can understand
+ ## Some services firewall can understand
  - ssh
  - http
  - https
@@ -22,8 +22,8 @@ Start firewall:  `sudo systemctl start firewalld `
  ## List changed:
  `sudo firewall-cmd --permanent --list-all`
  
- ##Reload after change
+ ## Reload after change
  `sudo firewall-cmd --reload`
  
- ##Enable firewall (if disabled)
+ ## Enable firewall (if disabled)
  `sudo systemctl enable firewalld`
