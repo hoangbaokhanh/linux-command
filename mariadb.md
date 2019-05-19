@@ -1,21 +1,21 @@
 ## Login
 mysql -u root -p
 
-##Create database
+## Create database
 CREATE DATABASE **dbname** DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
-##grant permission
+## grant permission
 GRANT ALL ON **dbname**.* TO '**user**'@'localhost' IDENTIFIED BY '**password**';
 FLUSH PRIVILEGES;
 
-##create user
+## create user
 CREATE USER foo IDENTIFIED BY 'password';
 
-#select db
+## select db
 use dbnamel
 
-#show db
+## show db
 show databases;
 
-#show tables
+## show tables
 show tables;
